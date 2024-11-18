@@ -1,0 +1,72 @@
+<doctype html>
+    <html>
+    <head>
+      <style>
+       {cursor: name}
+    body
+    {overflow: hiddden;
+    display: flex;
+    align-text:center;
+    justify-content:center;
+    }.loading
+    {background-color:####;
+    display: fixed}
+    .loading img {
+    display:block;
+    min-height: 209px;
+    min-width:200px;
+    }
+    .mouse{
+    width: 25px;
+    height:25px;
+    border-radius: 100%;
+    background-color:#FFF;
+    position:absolute;
+    animation:mouseAnimation .5s
+    infinite ease-in-out alternate;
+    left:0;
+    top:0;}
+    @keyframe mouseAnimation{from{
+    width: 25px;
+    height: 25px;}
+    to {
+    width: 15px;
+    height: 15px
+    }}
+     </style>
+    </head>
+    <body>
+    <div class="loading">
+    <img src="http://a.top4top.net/p_1990j031.gif"alt="loading"></div>
+    <div class="mouse original"></div>
+    <audio controls autoplay>
+    <source src="https://ringtonedownload.best/wp-content/uploads/2021/05/Pikapi-Pika-Pika-Ringtone-Song-free-Download.mp3"
+    type= "audio/mp3">
+    
+    <script>
+    $(".loading").height($(window).height())
+    $(".loading").width($(window).width())
+    $(".loading img").css({paddingTop:($(".loading").height()-$("loading img").height())/2,
+    paddingLeft:($(".loading").width()-$("loading img").width())/2
+    });
+    $(window).resize(function(){"use strict";
+    $("loading").height($(windows)height());
+    $("loading").width($(windows)width());
+    $("loading img").css({paddingTop: ($("loading")height()-$("loading img").height())/2,
+    padding Left:($(".loading").width()-$(loading).width()-$("loading img").width())/2
+    });});
+    
+    $(window).mousemove(function(e)
+    {
+    "use strict";
+    $(".original").css({
+    left:e.pageX -16,
+    top: e.pageY-16});
+    });
+    $("body").on("click",function(e)
+    {use strict";$("original").clone(true).appendTo("body").css({
+    left:e.pageX-16,
+    top:e.pageY-16}).removeClass("original");});
+    </script>
+    </body>
+    </html>
